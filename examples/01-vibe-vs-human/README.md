@@ -44,12 +44,12 @@ graph TD
 
 ```mermaid
 graph LR
-    A[Input: 400 items] --> B[Vibe Coding O(n²)]
-    A --> C[Human Coding O(n)]
-    B --> D[160,000 operations]
-    C --> E[400 operations]
-    D --> F[❌ Slow]
-    E --> G[✅ Fast]
+    A["Input: 400 items"] --> B["Vibe Coding O(n²)"]
+    A --> C["Human Coding O(n)"]
+    B --> D["160,000 operations"]
+    C --> E["400 operations"]
+    D --> F["❌ Slow"]
+    E --> G["✅ Fast"]
     style D fill:#ffcccc
     style E fill:#ccffcc
 ```
