@@ -20,18 +20,18 @@ These examples illustrate how different algorithmic approaches to the same probl
 
 ```mermaid
 graph LR
-    A[Find Primes up to n] --> B[Vibe Coding]
-    A --> C[Human Coding]
-    A --> D[Expert Coding]
-    B --> E[Check all divisors<br/>2 to n-1]
-    C --> F[Check divisors<br/>up to √n]
-    D --> G[Sieve:<br/>Mark multiples]
-    E --> H[O(n²)]
-    F --> I[O(n√n)]
-    G --> J[O(n log log n)]
-    H --> K[❌ Slowest]
-    I --> L[⚠️ Better]
-    J --> M[✅ Optimal]
+    A["Find Primes up to n"] --> B["Vibe Coding"]
+    A --> C["Human Coding"]
+    A --> D["Expert Coding"]
+    B --> E["Check all divisors<br/>2 to n-1"]
+    C --> F["Check divisors<br/>up to √n"]
+    D --> G["Sieve:<br/>Mark multiples"]
+    E --> H["O(n²)"]
+    F --> I["O(n√n)"]
+    G --> J["O(n log log n)"]
+    H --> K["❌ Slowest"]
+    I --> L["⚠️ Better"]
+    J --> M["✅ Optimal"]
     style K fill:#ffcccc
     style L fill:#ffffcc
     style M fill:#ccffcc
