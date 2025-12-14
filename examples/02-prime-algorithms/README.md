@@ -199,22 +199,22 @@ The performance gap widens dramatically:
 ```mermaid
 graph TD
     subgraph "Time Complexity Growth"
-    A[Input Size n] --> B[Vibe: O(n²)]
-    A --> C[Human: O(n√n)]
-    A --> D[Expert: O(n log log n)]
+    A["Input Size n"] --> B["Vibe: O(n²)"]
+    A --> C["Human: O(n√n)"]
+    A --> D["Expert: O(n log log n)"]
     end
     
-    B --> E[n=100: ~10,000 ops]
-    B --> F[n=1,000: ~1,000,000 ops]
-    B --> G[n=10,000: ~100,000,000 ops]
+    B --> E["n=100: ~10,000 ops"]
+    B --> F["n=1,000: ~1,000,000 ops"]
+    B --> G["n=10,000: ~100,000,000 ops"]
     
-    C --> H[n=100: ~1,000 ops]
-    C --> I[n=1,000: ~31,623 ops]
-    C --> J[n=10,000: ~1,000,000 ops]
+    C --> H["n=100: ~1,000 ops"]
+    C --> I["n=1,000: ~31,623 ops"]
+    C --> J["n=10,000: ~1,000,000 ops"]
     
-    D --> K[n=100: ~260 ops]
-    D --> L[n=1,000: ~3,010 ops]
-    D --> M[n=10,000: ~33,860 ops]
+    D --> K["n=100: ~260 ops"]
+    D --> L["n=1,000: ~3,010 ops"]
+    D --> M["n=10,000: ~33,860 ops"]
     
     style G fill:#ff9999
     style J fill:#ffff99
