@@ -62,14 +62,14 @@ graph LR
 
 ```mermaid
 graph TD
-    A[Find Primes up to 10000] --> B[Vibe: Trial Division]
-    A --> C[Human: Sieve of Eratosthenes]
-    B --> D[Check each number<br/>individually]
-    B --> E[O(n² √n)]
-    C --> F[Mark multiples<br/>as composite]
-    C --> G[O(n log log n)]
-    E --> H[⏱️ Seconds]
-    G --> I[⚡ Milliseconds]
+    A["Find Primes up to 10000"] --> B["Vibe: Trial Division"]
+    A --> C["Human: Sieve of Eratosthenes"]
+    B --> D["Check each number<br/>individually"]
+    B --> E["O(n² √n)"]
+    C --> F["Mark multiples<br/>as composite"]
+    C --> G["O(n log log n)"]
+    E --> H["⏱️ Seconds"]
+    G --> I["⚡ Milliseconds"]
     style H fill:#ffcccc
     style I fill:#ccffcc
 ```
