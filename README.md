@@ -66,8 +66,8 @@ Includes performance benchmarks and visualization tools.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-coding-education.git
-cd ai-coding-education
+git clone https://github.com/iportilla/ai-coding.git
+cd ai-coding
 
 # Run Example 1 (Python)
 python examples/01-vibe-vs-human/example-1.py
