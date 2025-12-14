@@ -148,7 +148,7 @@ ax2.set_xlim(0, 10)
 ax2.set_ylim(0, max(senior_manual.max(), senior_ai_total.max()) * 1.1)
 
 plt.tight_layout()
-plt.savefig('/Users/jportilla/Downloads/pilot/time_comparison.png', dpi=300, bbox_inches='tight')
+plt.savefig('time_comparison.png', dpi=300, bbox_inches='tight')
 print("✅ Plot saved to: time_comparison.png")
 
 # ============================================================================
@@ -199,7 +199,7 @@ ax.grid(True, alpha=0.3, linestyle='--')
 ax.set_xlim(0, 10)
 
 plt.tight_layout()
-plt.savefig('/Users/jportilla/Downloads/pilot/crossover_analysis.png', dpi=300, bbox_inches='tight')
+plt.savefig('crossover_analysis.png', dpi=300, bbox_inches='tight')
 print("✅ Crossover analysis plot saved to: crossover_analysis.png")
 
 plt.show()
