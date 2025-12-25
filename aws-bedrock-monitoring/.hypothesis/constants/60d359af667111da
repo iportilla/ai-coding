@@ -1,4 +1,0 @@
-# file: /Users/fiery/Documents/GitHub/ai-coding/aws-bedrock-monitoring/src/utils.py
-# hypothesis_version: 6.148.7
-
-['--bucket', '--output', '--query', '--role-name', 'Account', 'FAILED', 'SUCCESS', '^\\d{12}$', 'aws', 'cloudwatch', 'configure', 'dashboard', 'describe-log-groups', 'get', 'get-caller-identity', 'get-role', 'head-bucket', 'iam', 'iam-role', 'list-dashboards', 'list-topics', 'log-group', 'logs', 'region', 's3-bucket', 's3api', 'sns', 'sns-topic', 'sts', 'text']
