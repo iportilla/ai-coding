@@ -16,15 +16,19 @@ aws-bedrock-monitoring/
 │   ├── __init__.py              # Test package initialization
 │   ├── conftest.py              # Pytest configuration and fixtures
 │   ├── test_config.py           # Unit tests for configuration
+│   ├── test_iam_role.py         # Unit tests for IAM role
+│   ├── test_integration.py      # Unit tests for integration
 │   ├── test_utils.py            # Unit tests for utilities
 │   └── test_properties.py       # Property-based tests
 ├── scripts/                     # Deployment scripts (existing)
+│   ├── 0-setup-all.sh
 │   ├── 1-setup-iam-role.sh
 │   ├── 2-create-s3-bucket.sh
 │   ├── 3-enable-bedrock-logging.sh
 │   ├── 4-create-cloudwatch-dashboard.sh
 │   ├── 5-create-cloudwatch-alarms.sh
-│   └── 6-usage-report.py
+│   ├── 6-usage-report.py
+│   └── 7-cleanup-resources.sh
 ├── requirements.txt             # Python dependencies
 ├── pytest.ini                  # Pytest configuration
 ├── run_tests.py                 # Test runner script
