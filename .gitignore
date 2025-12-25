@@ -1,26 +1,15 @@
-# Angular specific
-/dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
-.angular/
+# macOS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Node modules and dependency files
-/node_modules/
-/package-lock.json
-/yarn.lock
-
-# Environment files
-/.env
-
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
-*.tsbuildinfo
+# Temporary files
+*~
+~$*
 
 # Logs
 npm-debug.log*
@@ -64,3 +53,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Personal memory files (contain local paths and session info)
+memory.md
+**/memory.md
