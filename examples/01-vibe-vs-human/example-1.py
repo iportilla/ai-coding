@@ -6,6 +6,7 @@ print("=" * 60)
 print("EXAMPLE 1: Order Preservation Bug")
 print("=" * 60)
 
+# Sample lists with some overlapping values (3 and 5 appear in both)
 list1 = [10, 4, 3, 42, 5]
 list2 = [60, 7, 8, 3, 5]
 
@@ -27,6 +28,7 @@ def human_merge(list1, list2):
             result.append(item)
     return result
 
+# Compare outputs: vibe version will have random order, human version preserves original order
 print(f"Vibe coding result:  {vibe_merge(list1, list2)}")
 print(f"Human coding result: {human_merge(list1, list2)}")
 print("❌ Vibe version loses insertion order!\n")
@@ -48,6 +50,7 @@ def human_average(numbers):
         return 0  # Or raise ValueError with clear message
     return sum(numbers) / len(numbers)
 
+# Test with empty list to demonstrate error handling
 try:
     print(f"Vibe average of []: {vibe_average([])}")
 except ZeroDivisionError:
@@ -61,6 +64,7 @@ print("=" * 60)
 print("EXAMPLE 3: Performance Issues")
 print("=" * 60)
 
+# Sample data for performance testing
 data = list(range(1000))
 
 # VIBE CODING: Nested loops without thinking about complexity
@@ -87,13 +91,15 @@ def human_find_duplicates(lst):
 
 import time
 
-# Test with duplicates
+# Create test data with intentional duplicates (repeated 50 times)
 test_data = [1, 2, 3, 2, 4, 5, 3, 6] * 50
 
+# Time the vibe coding approach
 start = time.time()
 vibe_result = vibe_find_duplicates(test_data)
 vibe_time = time.time() - start
 
+# Time the human coding approach
 start = time.time()
 human_result = human_find_duplicates(test_data)
 human_time = time.time() - start
@@ -107,6 +113,7 @@ print("=" * 60)
 print("EXAMPLE 4: Prime Number Generation")
 print("=" * 60)
 
+# Find all prime numbers up to this value
 n = 10000
 
 # VIBE CODING: Check each number individually
@@ -148,10 +155,12 @@ def human_find_primes(n):
 
 import time
 
+# Benchmark the vibe coding approach
 start = time.time()
 vibe_primes = vibe_find_primes(n)
 vibe_time = time.time() - start
 
+# Benchmark the human coding approach
 start = time.time()
 human_primes = human_find_primes(n)
 human_time = time.time() - start
@@ -182,10 +191,13 @@ def human_calculator(expression):
     # Use ast.literal_eval or a proper parser in production
     return eval(expression)  # Still using eval but with validation
 
+# Test with safe input
 print(f"Vibe calc '2+2': {vibe_calculator('2+2')}")
 print("❌ But vibe version allows: vibe_calculator('__import__(\"os\").system(\"ls\")')")
 print("   This could execute arbitrary code!")
 print(f"Human calc '2+2': {human_calculator('2+2')}")
+
+# Test human version with malicious input to show it's blocked
 try:
     human_calculator('__import__("os")')
 except ValueError as e:

@@ -1,0 +1,7 @@
+# Testing dependencies
+hypothesis>=6.0.0
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# AWS SDK (optional, for enhanced testing)
+boto3>=1.26.0

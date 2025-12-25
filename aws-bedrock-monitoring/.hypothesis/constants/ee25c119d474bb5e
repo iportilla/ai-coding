@@ -1,0 +1,4 @@
+# file: /Users/fiery/Documents/GitHub/ai-coding/aws-bedrock-monitoring/src/config.py
+# hypothesis_version: 6.148.7
+
+[1000, 100000, 'AWS_ACCOUNT_ID', 'AWS_DEFAULT_REGION', 'accountId', 'alerting', 'bedrock-logs', 'cloudwatchLogGroup', 'dashboard', 'errorRate', 'highLatency', 'highTokenUsage', 'iam', 'invocationSpike', 'lifecycleDays', 'name', 'region', 'retentionDays', 'roleName', 's3BucketName', 'snsTopicName', 'storage', 'thresholds', 'us-east-1']
