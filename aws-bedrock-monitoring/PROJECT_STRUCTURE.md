@@ -179,3 +179,26 @@ This project structure provides the foundation for implementing the remaining mo
 5. Use the logging utilities for consistent output
 
 The testing framework ensures that all components work correctly across different AWS environments and configurations.
+
+
+
+
+
+## Explaination
+
+
+
+![image-20251225104910296](/Users/fiery/Library/Application Support/typora-user-images/image-20251225104910296.png)
+
+
+
+    flowchart LR
+        A[User logs in: user@company.com]
+        B[IAM Identity Center]
+        C[Permission: SetBedrockDeveloper]
+        D[AWSReservedSSO Role]
+        E[STS Temporary Credentials]
+        F[Assumed Role ARN: includes email]
+    
+        A --> B --> C --> D --> E --> F
+    
